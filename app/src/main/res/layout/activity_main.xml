@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="227dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/lalin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_title_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:text="Lalin Pasar Minggu Arah Pancoran Macet di Beberapa Titik Pagi Ini"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/txt_content_news"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="\n \nJakarta - Beberapa titik kemacetan tampak di sepanjang Jalan Raya Pasar Minggu menuju Pancoran, Jakarta Selatan (Jaksel). Sejumlah kendaraan roda dua maupun roda empat memadati seluruh bagian jalan.\n \nPantauan detikcom, Rabu (6/9/2023) pukul 07.45 WIB, kemacetan mulai nampak dari depan terminal bus Pasar Minggu. Terlihat pemotor mendominasi di jalan ini hingga sebagian menggunakan trotoar jalan. \n \nKemacetan disebabkan banyaknya kendaraan yang berputar arah di seberang Ditjen Bina Pemerintah Desa Kementerian Dalam Negeri. Kemudian kemacetan kembali terjadi mendekati Taman Makan Pahlawan Kalibata. \n \nSuara klakson kendaraan pun saling bersahutan. Terlihat juga beberapa pemotor saling bersenggolan akibat saling serobot jalan. \n \nKemacetan terlihat kembali di lampu merah pertigaan arah ke Duren Tiga. Rupanya kemacetan terus terjadi hingga mengarah ke lampu merah Pancoran.  Baca artikel detiknews, &quot;Lalin Pasar Minggu Arah Pancoran Macet di Beberapa Titik Pagi Ini&quot; selengkapnya https://news.detik.com/berita/d-6915654/lalin-pasar-minggu-arah-pancoran-macet-di-beberapa-titik-pagi-ini.  Download Apps Detikcom Sekarang https://apps.detik.com/detik/"
+                app:layout_constraintEnd_toEndOf="@+id/txt_title_news"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_title_news"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_news" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline"
+                app:layout_constraintGuide_percent="0.5"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/btn_sebelumnya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Sebelumnya"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/txt_content_news"
+                app:layout_constraintTop_toBottomOf="@id/txt_content_news" />
+
+            <Button
+                android:id="@+id/btn_setelahnya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Setelahnya"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txt_content_news"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/txt_content_news" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
